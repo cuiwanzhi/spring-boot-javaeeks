@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    #url: jdbc:h2:mem:javaeeks  #数据库地址MybatisDb是数据库名
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=javaeeks
+    username: sa
+    password: 123456
+    # url: jdbc:h2:file:E:/db_data/sample
+    #driver-class-name: org.h2.Driver  #数据库驱动
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    #platform: h2
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    filters: stat,wall,slf4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true,druid.stat.slowSqlMillis=500
+    validationQuery: select 'x'
+    initialization-mode: never
+#    schema:
+#      - classpath:SQL/scheam.sql #建表代码 每次运行都会有一个新的库
+#    data:
+##      - classpath:SQL/data.sql #数据插入 每次云心都会插入数据
+#  h2:
+#    console:
+#      path: /h2
+#      enabled: true
