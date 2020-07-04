@@ -1,12 +1,13 @@
 spring:
   datasource:
     #url: jdbc:h2:mem:javaeeks  #数据库地址MybatisDb是数据库名
-    url: jdbc:sqlserver://localhost:1433;DatabaseName=javaeeks
-    username: sa
+    #url: jdbc:sqlserver://localhost:1433;DatabaseName=javaeeks
+    url: jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8
+    username: root
     password: 123456
     # url: jdbc:h2:file:E:/db_data/sample
     #driver-class-name: org.h2.Driver  #数据库驱动
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     #platform: h2
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
@@ -24,3 +25,8 @@ spring:
 #    console:
 #      path: /h2
 #      enabled: true
+logging:
+  file:
+    name: log/springboot.log
+  level:
+    com.springboot.springbootjavaeeks: debug

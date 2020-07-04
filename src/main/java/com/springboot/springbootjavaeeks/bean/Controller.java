@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Data
-public class UserController {
+public class Controller {
     private  int id;
     private String controller_name;
     private String password;
