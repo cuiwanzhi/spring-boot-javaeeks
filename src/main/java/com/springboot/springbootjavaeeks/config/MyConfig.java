@@ -16,6 +16,7 @@ public class MyConfig implements WebMvcConfigurer {
         registry.addViewController("/").setViewName("login");
         registry.addViewController("/user").setViewName("login");
         registry.addViewController("/controller").setViewName("controller");
+        registry.addViewController("/changePassword").setViewName("updataPassword");
     }
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

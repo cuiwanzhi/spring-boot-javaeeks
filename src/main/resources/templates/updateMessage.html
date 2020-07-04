@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改信息</title>
+</head>
+<body>
+
+<form action="/updateMessage" method="post">
+    <input name="user_name" type="text" th:attr="value=${user.getUser_name()}"><br>
+    <input name="name" type="text" th:attr="value=${user.getName()}"><br>
+    <input name="gender" type="text" th:attr="value=${user.getGender()}"><br>
+    <input name="UserBirthday" type="text" th:attr="value=${#dates.format(user.getBirthday(), 'yyyy-MM-dd hh:mm')}"><br>
+    <input name="contact" type="text" th:attr="value=${user.getContact()}"><br>
+    <input name="e_mail" type="text" th:attr="value=${user.getE_mail()}"><br>
+    <input value="确定" type="submit">
+</form>
+
+</body>
+</html>
