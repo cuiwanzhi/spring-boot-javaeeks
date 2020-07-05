@@ -26,6 +26,6 @@ public class Year {
     private int user_id;
     private String year_type;//备注
     private float year_number;
-    private String year_year;
+
     private Date year_date;
 }

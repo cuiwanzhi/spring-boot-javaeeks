@@ -32,6 +32,7 @@ public class UserController {
         User user = userMapper.getUser(loginUser.getId());
         if (user.getPassword().equals(loginUser.getPassword())) {
             request.getSession().setAttribute("user", user);
+            request.getSession().setAttribute("level", "user");
             model.addAttribute("msg", "登录成功");
             log.debug("登录：" + user.toString());
             return "index";
@@ -91,5 +92,8 @@ public class UserController {
         model.addAttribute("user", user);
         return "updateMessage";
     }
+
+
+
 
 }

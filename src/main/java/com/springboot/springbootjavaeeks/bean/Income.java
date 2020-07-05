@@ -26,7 +26,7 @@ public class Income {
     private int user_id;
     private String income_type;
     private float income_number;
-    private String income_year;
+
     private Date income_date;
 
 }
