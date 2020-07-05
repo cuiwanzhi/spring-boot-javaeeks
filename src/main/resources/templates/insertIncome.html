@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>添加收入数据</title>
 </head>
-<body>
+<body style="TEXT-ALIGN:center">
 <form action="/insertIncome" method="post">
-    <input type="text" name="income_number" placeholder="金额">
-    <input type="text" placeholder="时间" name="date">
-    <input type="text" placeholder="备注" name="income_type">
+    <input required="required" type="text" name="income_number" placeholder="金额">
+    <input required="required" type="text" placeholder="时间" name="date">
+    <input required="required" type="text" placeholder="备注" name="income_type">
     <button type="submit">插入</button>
 </form>
 <a href="/getAllIncome"><button type="">取消</button></a>

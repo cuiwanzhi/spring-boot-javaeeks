@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link href="/CSS/index.css" rel="stylesheet" type="text/css"/>
     <meta charset="UTF-8">
     <title>管理员登录</title>
 </head>
-<body>
+<body style="TEXT-ALIGN:center">
+<h4 style="color:blue">管理员登录</h4>
+<div class="mydiv">
 <span th:text="${msg}"></span>
 <form method="post" action="/controllerLogin">
-    <input type="text" name="id">
+    <input type="text" name="id" placeholder="请输入管理员账号">
     <br>
-    <input type="password" name="password">
+    <input type="password" name="password" placeholder="请输入密码">
     <br>
     <input value="登录" type="submit">
 </form>
+</div>
 </body>
 </html>

@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <title >首页</title>
 </head>
-<body>
-<p th:text="${msg}"></p>
+<body style="TEXT-ALIGN:center">
+<h4 style="color:blue">用户首页</h4>
+<p th:text="${msg}" style="color:red"></p>
 <a href="/userUnlogin">
     <button type="button">退出登录</button>
-</a>
+</a><br><br>
+
 <a href="/changePassword">
     <button type="button">修改密码</button>
-</a>
+</a><br><br>
+
 <a href="/getMessage">
     <button type="button">修改个人信息</button>
-</a>
+</a><br><br>
+
 <a href="/getAllIncome">
     <button type="button">查看收入信息</button>
-</a>
+</a><br><br>
+
 <a href="/getAllYear">
     <button type="button">查看支出信息</button>
 </a>

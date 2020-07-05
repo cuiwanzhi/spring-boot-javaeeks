@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>登录</title>
 </head>
-<body>
-<span th:text="${msg}"></span>
+<body style="TEXT-ALIGN:center">
+<h4 style="color:blue">用户登录</h4>
+<span th:text="${msg}" style="color:red"></span>
 <form method="post" action="/userlogin">
-    <input type="text" name="id">
+    <input type="text" name="id" placeholder="账号">
     <br>
-    <input type="password" name="password">
+    <input type="password" name="password"placeholder="密码">
     <br>
     <input value="登录" type="submit">
 </form>

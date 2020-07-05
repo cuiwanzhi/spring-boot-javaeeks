@@ -1651,3 +1651,313 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a par
 2020-07-06 01:06:07.350 DEBUG 17916 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getAllUser      : ==>  Preparing: select * from user
 2020-07-06 01:06:07.351 DEBUG 17916 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getAllUser      : ==> Parameters: 
 2020-07-06 01:06:07.355 DEBUG 17916 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getAllUser      : <==      Total: 2
+2020-07-06 01:22:20.722  INFO 8824 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 8824 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 01:22:20.725 DEBUG 8824 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 01:22:20.726  INFO 8824 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 01:22:20.860  INFO 8824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 01:22:20.861  INFO 8824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 01:22:22.392  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 01:22:22.395  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 01:22:22.425  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JDBC repository interfaces.
+2020-07-06 01:22:22.448  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 01:22:22.448  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 01:22:22.468  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2020-07-06 01:22:23.756  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 01:22:23.775  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 01:22:23.775  INFO 8824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 01:22:23.973  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 01:22:23.973  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3112 ms
+2020-07-06 01:22:24.376  INFO 8824 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 01:22:25.085  INFO 8824 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 01:22:25.166  INFO 8824 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 01:22:25.298  INFO 8824 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 01:22:25.498  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 01:22:25.574  INFO 8824 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 01:22:25.832  INFO 8824 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 01:22:25.933  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 01:22:26.145  INFO 8824 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 01:22:26.160  INFO 8824 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 01:22:26.292  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 01:22:26.360  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 01:22:26.364  INFO 8824 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 01:22:26.365  INFO 8824 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 01:22:26.378  INFO 8824 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 6.566 seconds (JVM running for 8.386)
+2020-07-06 01:22:27.316  INFO 8824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 01:22:27.317  INFO 8824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 01:22:27.327  INFO 8824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-06 01:25:47.521  WARN 8824 --- [http-nio-8080-exec-8] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [563] milliseconds.
+2020-07-06 01:31:56.573 ERROR 8824 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 570688
+2020-07-06 01:31:56.575 ERROR 8824 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 571540
+2020-07-06 01:31:56.578 ERROR 8824 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 571577
+2020-07-06 01:31:56.583 ERROR 8824 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 571609
+2020-07-06 01:31:56.585 ERROR 8824 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 571648
+2020-07-06 01:31:56.616 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 01:31:56.722 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 01:31:56.744 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 01:32:11.997 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 01:32:12.000 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 01:32:12.003 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 01:32:15.163 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:32:15.168 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:32:15.173 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:32:50.595 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:32:50.596 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:32:50.599 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:34:30.199 ERROR 8824 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 99601
+2020-07-06 01:34:30.228 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:34:30.231 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:34:30.238 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:34:34.651 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:34:34.651 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:34:34.655 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:34:35.405 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:34:35.406 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:34:35.407 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:35:22.062 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:35:22.063 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:35:22.069 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:35:37.124 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:35:37.124 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:35:37.130 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:35:39.676 DEBUG 8824 --- [http-nio-8080-exec-3] c.s.s.mapper.IncomeMapper.selectIncome   : ==>  Preparing: select * from income where id=?
+2020-07-06 01:35:39.678 DEBUG 8824 --- [http-nio-8080-exec-3] c.s.s.mapper.IncomeMapper.selectIncome   : ==> Parameters: 2(Integer)
+2020-07-06 01:35:39.680 DEBUG 8824 --- [http-nio-8080-exec-3] c.s.s.mapper.IncomeMapper.selectIncome   : <==      Total: 1
+2020-07-06 01:36:10.580 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.IncomeMapper.selectIncome   : ==>  Preparing: select * from income where id=?
+2020-07-06 01:36:10.582 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.IncomeMapper.selectIncome   : ==> Parameters: 2(Integer)
+2020-07-06 01:36:10.588 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.IncomeMapper.selectIncome   : <==      Total: 1
+2020-07-06 01:37:47.345 ERROR 8824 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 96760
+2020-07-06 01:37:47.364 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.selectIncome   : ==>  Preparing: select * from income where id=?
+2020-07-06 01:37:47.366 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.selectIncome   : ==> Parameters: 2(Integer)
+2020-07-06 01:37:47.380 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.selectIncome   : <==      Total: 1
+2020-07-06 01:37:58.259 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.updateIncome   : ==>  Preparing: update income set user_id=?, income_type=?, income_number=?, income_date=? where id=?
+2020-07-06 01:37:58.266 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.updateIncome   : ==> Parameters: 1(Integer), 付款(String), 100.0(Float), 2020-07-05 00:00:00.0(Timestamp), 2(Integer)
+2020-07-06 01:37:58.270 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.updateIncome   : <==    Updates: 1
+2020-07-06 01:37:58.281 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:37:58.282 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:37:58.287 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:38:06.411 DEBUG 8824 --- [http-nio-8080-exec-3] c.s.s.mapper.YearMapper.getAllYear       : ==>  Preparing: select * from year
+2020-07-06 01:38:06.413 DEBUG 8824 --- [http-nio-8080-exec-3] c.s.s.mapper.YearMapper.getAllYear       : ==> Parameters: 
+2020-07-06 01:38:06.418 DEBUG 8824 --- [http-nio-8080-exec-3] c.s.s.mapper.YearMapper.getAllYear       : <==      Total: 2
+2020-07-06 01:38:47.043 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.YearMapper.getAllYear       : ==>  Preparing: select * from year
+2020-07-06 01:38:47.044 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.YearMapper.getAllYear       : ==> Parameters: 
+2020-07-06 01:38:47.047 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.YearMapper.getAllYear       : <==      Total: 2
+2020-07-06 01:39:06.103 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.YearMapper.getAllYear       : ==>  Preparing: select * from year
+2020-07-06 01:39:06.104 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.YearMapper.getAllYear       : ==> Parameters: 
+2020-07-06 01:39:06.110 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.YearMapper.getAllYear       : <==      Total: 2
+2020-07-06 01:39:09.319 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getAllIncome   : ==>  Preparing: select * from income
+2020-07-06 01:39:09.319 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getAllIncome   : ==> Parameters: 
+2020-07-06 01:39:09.321 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getAllIncome   : <==      Total: 2
+2020-07-06 01:39:12.050 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.YearMapper.getAllYear       : ==>  Preparing: select * from year
+2020-07-06 01:39:12.051 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.YearMapper.getAllYear       : ==> Parameters: 
+2020-07-06 01:39:12.054 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.YearMapper.getAllYear       : <==      Total: 2
+2020-07-06 01:39:14.985 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.selectYear       : ==>  Preparing: select * from year where id=?
+2020-07-06 01:39:14.985 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.selectYear       : ==> Parameters: 3(Integer)
+2020-07-06 01:39:14.987 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.selectYear       : <==      Total: 1
+2020-07-06 01:40:00.854 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.YearMapper.selectYear       : ==>  Preparing: select * from year where id=?
+2020-07-06 01:40:00.855 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.YearMapper.selectYear       : ==> Parameters: 3(Integer)
+2020-07-06 01:40:00.858 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.YearMapper.selectYear       : <==      Total: 1
+2020-07-06 01:40:23.838 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.YearMapper.selectYear       : ==>  Preparing: select * from year where id=?
+2020-07-06 01:40:23.839 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.YearMapper.selectYear       : ==> Parameters: 3(Integer)
+2020-07-06 01:40:23.841 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.YearMapper.selectYear       : <==      Total: 1
+2020-07-06 01:41:06.718 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.YearMapper.selectYear       : ==>  Preparing: select * from year where id=?
+2020-07-06 01:41:06.718 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.YearMapper.selectYear       : ==> Parameters: 3(Integer)
+2020-07-06 01:41:06.727 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.YearMapper.selectYear       : <==      Total: 1
+2020-07-06 01:41:11.696 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.controller.YearController          : Sun Jul 05 00:00:00 CST 2020
+2020-07-06 01:41:11.696 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.controller.YearController          : Sun Jul 05 00:00:00 CST 2020
+2020-07-06 01:41:11.697 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.YearMapper.updateYear       : ==>  Preparing: update year set user_id=?, year_type=?, year_number=?, year_date=? where id=?
+2020-07-06 01:41:11.698 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.YearMapper.updateYear       : ==> Parameters: 1(Integer), 2号嫖资(String), 100.0(Float), 2020-07-05 00:00:00.0(Timestamp), 3(Integer)
+2020-07-06 01:41:11.700 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.YearMapper.updateYear       : <==    Updates: 1
+2020-07-06 01:41:11.710 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.YearMapper.getAllYear       : ==>  Preparing: select * from year
+2020-07-06 01:41:11.710 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.YearMapper.getAllYear       : ==> Parameters: 
+2020-07-06 01:41:11.712 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.YearMapper.getAllYear       : <==      Total: 2
+2020-07-06 01:41:16.335 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.m.ControllerMapper.getAllUser      : ==>  Preparing: select * from user
+2020-07-06 01:41:16.336 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.m.ControllerMapper.getAllUser      : ==> Parameters: 
+2020-07-06 01:41:16.342 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.m.ControllerMapper.getAllUser      : <==      Total: 2
+2020-07-06 01:41:43.796 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getAllUser      : ==>  Preparing: select * from user
+2020-07-06 01:41:43.797 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getAllUser      : ==> Parameters: 
+2020-07-06 01:41:43.908 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getAllUser      : <==      Total: 2
+2020-07-06 01:41:59.901 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getAllUser      : ==>  Preparing: select * from user
+2020-07-06 01:41:59.901 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getAllUser      : ==> Parameters: 
+2020-07-06 01:41:59.904 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getAllUser      : <==      Total: 2
+2020-07-06 01:42:04.720 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.C.updateUserPassword             : ==>  Preparing: update User set password ='000000' where id=?
+2020-07-06 01:42:04.723 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.C.updateUserPassword             : ==> Parameters: 3(Integer)
+2020-07-06 01:42:04.725 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.C.updateUserPassword             : <==    Updates: 1
+2020-07-06 01:42:04.728 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.ControllerMapper.getAllUser      : ==>  Preparing: select * from user
+2020-07-06 01:42:04.729 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.ControllerMapper.getAllUser      : ==> Parameters: 
+2020-07-06 01:42:04.730 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.m.ControllerMapper.getAllUser      : <==      Total: 2
+2020-07-06 01:42:27.085 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.C.updateUserPassword             : ==>  Preparing: update User set password ='000000' where id=?
+2020-07-06 01:42:27.086 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.C.updateUserPassword             : ==> Parameters: 3(Integer)
+2020-07-06 01:42:27.089 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.C.updateUserPassword             : <==    Updates: 1
+2020-07-06 01:42:27.092 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.ControllerMapper.getAllUser      : ==>  Preparing: select * from user
+2020-07-06 01:42:27.093 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.ControllerMapper.getAllUser      : ==> Parameters: 
+2020-07-06 01:42:27.098 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.m.ControllerMapper.getAllUser      : <==      Total: 2
+2020-07-06 01:43:06.311 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.m.C.updateUserPassword             : ==>  Preparing: update User set password ='000000' where id=?
+2020-07-06 01:43:06.312 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.m.C.updateUserPassword             : ==> Parameters: 3(Integer)
+2020-07-06 01:43:06.314 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.m.C.updateUserPassword             : <==    Updates: 1
+2020-07-06 01:43:06.318 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.m.ControllerMapper.getAllUser      : ==>  Preparing: select * from user
+2020-07-06 01:43:06.319 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.m.ControllerMapper.getAllUser      : ==> Parameters: 
+2020-07-06 01:43:06.321 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.m.ControllerMapper.getAllUser      : <==      Total: 2
+2020-07-06 01:43:58.461 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:43:58.462 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:43:58.464 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:43:58.495 ERROR 8824 --- [http-nio-8080-exec-8] c.s.s.controller.UserController          : 登录失败：User(id=1, user_name=null, password=123456, name=null, gender=null, birthday=null, contact=null, e_mail=null)
+2020-07-06 01:44:35.137 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:44:35.137 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:44:35.140 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:44:35.142 ERROR 8824 --- [http-nio-8080-exec-10] c.s.s.controller.UserController          : 登录失败：User(id=1, user_name=null, password=123456, name=null, gender=null, birthday=null, contact=null, e_mail=null)
+2020-07-06 01:45:09.089 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:45:09.090 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:45:09.093 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:45:09.094 ERROR 8824 --- [http-nio-8080-exec-2] c.s.s.controller.UserController          : 登录失败：User(id=1, user_name=null, password=123456, name=null, gender=null, birthday=null, contact=null, e_mail=null)
+2020-07-06 01:45:31.910 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:45:31.911 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:45:31.935 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:45:31.936 ERROR 8824 --- [http-nio-8080-exec-4] c.s.s.controller.UserController          : 登录失败：User(id=1, user_name=null, password=123456, name=null, gender=null, birthday=null, contact=null, e_mail=null)
+2020-07-06 01:45:39.832 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:45:39.833 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:45:39.837 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:45:39.838 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 01:49:02.578 ERROR 8824 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 202740
+2020-07-06 01:49:02.594 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:49:02.595 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:49:02.597 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:49:32.239 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:49:32.239 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:49:32.242 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:50:53.772 ERROR 8824 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 81527
+2020-07-06 01:50:53.795 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:50:53.801 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:50:53.816 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:51:20.319 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:51:20.320 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:51:20.322 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:51:31.663 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
+2020-07-06 01:51:31.665 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
+2020-07-06 01:51:31.670 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
+2020-07-06 01:52:02.166 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
+2020-07-06 01:52:02.167 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
+2020-07-06 01:52:02.169 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
+2020-07-06 01:52:08.768 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
+2020-07-06 01:52:08.772 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
+2020-07-06 01:52:08.774 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
+2020-07-06 01:52:12.212 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.selectIncome   : ==>  Preparing: select * from income where id=?
+2020-07-06 01:52:12.215 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.selectIncome   : ==> Parameters: 3(Integer)
+2020-07-06 01:52:12.240 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.IncomeMapper.selectIncome   : <==      Total: 1
+2020-07-06 01:52:44.526 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.IncomeMapper.selectIncome   : ==>  Preparing: select * from income where id=?
+2020-07-06 01:52:44.527 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.IncomeMapper.selectIncome   : ==> Parameters: 3(Integer)
+2020-07-06 01:52:44.530 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.IncomeMapper.selectIncome   : <==      Total: 1
+2020-07-06 01:53:05.549 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
+2020-07-06 01:53:05.549 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
+2020-07-06 01:53:05.551 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
+2020-07-06 01:53:09.403 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.selectIncome   : ==>  Preparing: select * from income where id=?
+2020-07-06 01:53:09.403 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.selectIncome   : ==> Parameters: 3(Integer)
+2020-07-06 01:53:09.405 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.IncomeMapper.selectIncome   : <==      Total: 1
+2020-07-06 01:53:46.732 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
+2020-07-06 01:53:46.734 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
+2020-07-06 01:53:46.736 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
+2020-07-06 01:53:53.307 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
+2020-07-06 01:53:53.308 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
+2020-07-06 01:53:53.309 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
+2020-07-06 01:53:57.767 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.selectIncome   : ==>  Preparing: select * from income where id=?
+2020-07-06 01:53:57.769 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.selectIncome   : ==> Parameters: 3(Integer)
+2020-07-06 01:53:57.770 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.mapper.IncomeMapper.selectIncome   : <==      Total: 1
+2020-07-06 01:54:04.089 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.YearMapper.getUserYear      : ==>  Preparing: select * from year where user_id=?
+2020-07-06 01:54:04.090 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.YearMapper.getUserYear      : ==> Parameters: 1(Integer)
+2020-07-06 01:54:04.093 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.mapper.YearMapper.getUserYear      : <==      Total: 2
+2020-07-06 01:54:32.216 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.getUserYear      : ==>  Preparing: select * from year where user_id=?
+2020-07-06 01:54:32.217 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.getUserYear      : ==> Parameters: 1(Integer)
+2020-07-06 01:54:32.220 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.getUserYear      : <==      Total: 2
+2020-07-06 01:54:50.441 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.YearMapper.getUserYear      : ==>  Preparing: select * from year where user_id=?
+2020-07-06 01:54:50.444 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.YearMapper.getUserYear      : ==> Parameters: 1(Integer)
+2020-07-06 01:54:50.446 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.mapper.YearMapper.getUserYear      : <==      Total: 2
+2020-07-06 01:54:51.762 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.YearMapper.getUserYear      : ==>  Preparing: select * from year where user_id=?
+2020-07-06 01:54:51.762 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.YearMapper.getUserYear      : ==> Parameters: 1(Integer)
+2020-07-06 01:54:51.764 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.YearMapper.getUserYear      : <==      Total: 2
+2020-07-06 01:55:00.620 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.YearMapper.selectYear       : ==>  Preparing: select * from year where id=?
+2020-07-06 01:55:00.623 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.YearMapper.selectYear       : ==> Parameters: 3(Integer)
+2020-07-06 01:55:00.625 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.YearMapper.selectYear       : <==      Total: 1
+2020-07-06 01:55:18.150 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.YearMapper.selectYear       : ==>  Preparing: select * from year where id=?
+2020-07-06 01:55:18.150 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.YearMapper.selectYear       : ==> Parameters: 3(Integer)
+2020-07-06 01:55:18.153 DEBUG 8824 --- [http-nio-8080-exec-9] c.s.s.mapper.YearMapper.selectYear       : <==      Total: 1
+2020-07-06 01:55:23.018 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.YearMapper.getUserYear      : ==>  Preparing: select * from year where user_id=?
+2020-07-06 01:55:23.019 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.YearMapper.getUserYear      : ==> Parameters: 1(Integer)
+2020-07-06 01:55:23.020 DEBUG 8824 --- [http-nio-8080-exec-1] c.s.s.mapper.YearMapper.getUserYear      : <==      Total: 2
+2020-07-06 01:55:25.517 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.selectYear       : ==>  Preparing: select * from year where id=?
+2020-07-06 01:55:25.520 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.selectYear       : ==> Parameters: 3(Integer)
+2020-07-06 01:55:25.521 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.mapper.YearMapper.selectYear       : <==      Total: 1
+2020-07-06 01:58:53.457 ERROR 8824 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 207936
+2020-07-06 01:58:53.473 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 01:58:53.474 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 01:58:53.476 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 01:58:53.477 DEBUG 8824 --- [http-nio-8080-exec-7] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 01:59:57.072 ERROR 8824 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 63596
+2020-07-06 01:59:57.086 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 01:59:57.086 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 01:59:57.090 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:00:12.250 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 02:00:12.252 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 02:00:12.255 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:00:42.054 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 02:00:42.055 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 02:00:42.057 DEBUG 8824 --- [http-nio-8080-exec-2] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:00:57.843 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 02:00:57.844 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 02:00:57.847 DEBUG 8824 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:01:14.516 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 02:01:14.517 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 02:01:14.518 DEBUG 8824 --- [http-nio-8080-exec-6] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:01:31.251 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 02:01:31.251 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 02:01:31.254 DEBUG 8824 --- [http-nio-8080-exec-8] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:01:54.112 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 02:01:54.112 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 02:01:54.114 DEBUG 8824 --- [http-nio-8080-exec-10] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:02:09.051 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:02:09.052 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 02:02:09.053 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:02:09.054 DEBUG 8824 --- [http-nio-8080-exec-5] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 02:02:48.523  INFO 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 580 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:02:48.528 DEBUG 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:02:48.529  INFO 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:02:48.673  INFO 580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 02:02:48.674  INFO 580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 02:02:51.012  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:02:51.012  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:02:51.026  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:02:51.036  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:02:51.036  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:02:51.047  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-07-06 02:02:51.834  INFO 580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:02:51.844  INFO 580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:02:51.844  INFO 580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:02:51.967  INFO 580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:02:51.967  INFO 580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3292 ms
+2020-07-06 02:02:52.227  INFO 580 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:02:52.715  INFO 580 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 02:02:52.763  INFO 580 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:02:52.815  INFO 580 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 02:02:52.941  WARN 580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:02:52.966  INFO 580 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 02:02:53.109  INFO 580 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:02:53.184  INFO 580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:02:53.320  INFO 580 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:02:53.331  INFO 580 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:02:53.437  INFO 580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:02:53.484  INFO 580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:02:53.486  INFO 580 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:02:53.486  INFO 580 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:02:53.496  INFO 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 5.714 seconds (JVM running for 7.397)
+2020-07-06 02:03:18.178  INFO 580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:03:18.179  INFO 580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:03:18.188  INFO 580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-07-06 02:03:18.404  WARN 580 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [196] milliseconds.
+2020-07-06 02:03:37.319 DEBUG 580 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getController   : ==>  Preparing: select * from controller where id=?
+2020-07-06 02:03:37.432 DEBUG 580 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getController   : ==> Parameters: 1(Integer)
+2020-07-06 02:03:37.455 DEBUG 580 --- [http-nio-8080-exec-4] c.s.s.m.ControllerMapper.getController   : <==      Total: 1
+2020-07-06 02:04:33.704 DEBUG 580 --- [http-nio-8080-exec-10] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:04:33.705 DEBUG 580 --- [http-nio-8080-exec-10] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 02:04:33.708 DEBUG 580 --- [http-nio-8080-exec-10] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:04:33.728 DEBUG 580 --- [http-nio-8080-exec-10] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 02:04:39.207 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
+2020-07-06 02:04:39.209 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
+2020-07-06 02:04:39.220 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
