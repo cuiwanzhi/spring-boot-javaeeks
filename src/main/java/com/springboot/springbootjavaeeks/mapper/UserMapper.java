@@ -22,4 +22,10 @@ public interface UserMapper {
 
     @Update("update  user set password =#{newPassword} where id = #{id}")
     public void updataPassword(String newPassword, int id);
+
+    @Select("select sum(income_number) from income where id=#{id} group by id;")
+    public float getIncome(int id);
+
+    @Select("select sum(Year_number) from Year where id=#{id} group by id;")
+    public float getYear(int id);
 }

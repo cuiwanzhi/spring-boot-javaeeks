@@ -1961,3 +1961,939 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a par
 2020-07-06 02:04:39.207 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getUserIncome  : ==>  Preparing: select * from income where user_id=?
 2020-07-06 02:04:39.209 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getUserIncome  : ==> Parameters: 1(Integer)
 2020-07-06 02:04:39.220 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.IncomeMapper.getUserIncome  : <==      Total: 2
+2020-07-06 02:11:13.587 ERROR 580 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 394365
+2020-07-06 02:11:13.591 ERROR 580 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 500909
+2020-07-06 02:11:13.593 ERROR 580 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 500935
+2020-07-06 02:11:13.595 ERROR 580 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 500960
+2020-07-06 02:11:13.597 ERROR 580 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 500989
+2020-07-06 02:11:13.614 DEBUG 580 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:11:13.615 DEBUG 580 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 02:11:13.618 DEBUG 580 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:11:13.619 DEBUG 580 --- [http-nio-8080-exec-2] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 02:11:52.250  INFO 580 --- [Thread-197] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:11:52.253  INFO 580 --- [Thread-197] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:11:52.254  INFO 580 --- [Thread-197] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-07-06 02:11:52.270  INFO 580 --- [Thread-197] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-07-06 02:11:52.432  INFO 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 580 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:11:52.433 DEBUG 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:11:52.434  INFO 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:11:53.162  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:11:53.162  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:11:53.170  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:11:53.178  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:11:53.179  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:11:53.185  INFO 580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-07-06 02:11:53.402  INFO 580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:11:53.404  INFO 580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:11:53.404  INFO 580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:11:53.449  INFO 580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:11:53.449  INFO 580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1007 ms
+2020-07-06 02:11:53.585  INFO 580 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:11:53.696  INFO 580 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-07-06 02:11:53.704  INFO 580 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:11:53.718  INFO 580 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:11:53.736  INFO 580 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:11:53.737  INFO 580 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:11:53.783  WARN 580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:11:53.896  INFO 580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:11:54.016  INFO 580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:11:54.048  INFO 580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:11:54.054  INFO 580 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:11:54.055  INFO 580 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:11:54.083  INFO 580 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.721 seconds (JVM running for 547.985)
+2020-07-06 02:11:54.085  INFO 580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:11:54.085  INFO 580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:11:54.089  INFO 580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:11:54.098  INFO 580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-07-06 02:11:54.110 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:11:54.113 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 02:11:54.116 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:11:54.118 DEBUG 580 --- [http-nio-8080-exec-1] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 02:12:22.699  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:12:22.706 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:12:22.708  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:12:22.858  INFO 3988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 02:12:22.858  INFO 3988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 02:12:24.160  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:12:24.162  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:12:24.196  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:12:24.218  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:12:24.219  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:12:24.236  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-07-06 02:12:25.293  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:12:25.312  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:12:25.313  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:12:25.703  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:12:25.705  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2847 ms
+2020-07-06 02:12:26.288  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:12:26.790  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 02:12:26.834  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:12:26.899  INFO 3988 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 02:12:27.043  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:12:27.078  INFO 3988 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 02:12:27.242  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:12:27.324  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:12:27.477  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:12:27.488  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:12:27.582  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:12:27.632  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:12:27.634  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:12:27.635  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:12:27.646  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 5.757 seconds (JVM running for 7.71)
+2020-07-06 02:13:25.695  INFO 3988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:13:25.696  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:13:25.707  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-07-06 02:13:32.326 ERROR 3988 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 65034
+2020-07-06 02:13:32.329 ERROR 3988 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 65561
+2020-07-06 02:13:32.332 ERROR 3988 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 65581
+2020-07-06 02:13:32.334 ERROR 3988 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 65610
+2020-07-06 02:13:32.341 ERROR 3988 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 65647
+2020-07-06 02:13:32.359 DEBUG 3988 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:13:32.470 DEBUG 3988 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 02:13:32.495 DEBUG 3988 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:13:32.708  WARN 3988 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [206] milliseconds.
+2020-07-06 02:13:32.724 DEBUG 3988 --- [http-nio-8080-exec-2] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 02:19:18.577  INFO 3988 --- [Thread-197] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:19:18.580  INFO 3988 --- [Thread-197] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:19:18.581  INFO 3988 --- [Thread-197] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-07-06 02:19:18.584  INFO 3988 --- [Thread-197] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-07-06 02:19:18.716  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:19:18.716 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:19:18.716  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:19:19.213  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:19:19.213  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:19:19.221  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:19:19.227  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:19:19.227  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:19:19.234  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-07-06 02:19:19.462  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:19:19.484  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:19:19.484  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:19:19.579  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:19:19.580  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2020-07-06 02:19:19.729  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:19:20.035  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-07-06 02:19:20.057  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:19:20.096  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:19:20.110  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:19:20.110  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:19:20.112  WARN 3988 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes\com\springboot\springbootjavaeeks\controller\UserController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.springboot.springbootjavaeeks.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c03d5c7]
+2020-07-06 02:19:20.113  INFO 3988 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:19:20.114  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:19:20.115  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2020-07-06 02:19:20.121  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2020-07-06 02:19:20.122  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-06 02:19:20.136  INFO 3988 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-06 02:19:20.161 ERROR 3988 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes\com\springboot\springbootjavaeeks\controller\UserController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.springboot.springbootjavaeeks.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c03d5c7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.springboot.springbootjavaeeks.SpringBootJavaeeksApplication.main(SpringBootJavaeeksApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.springboot.springbootjavaeeks.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c03d5c7]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/springboot/springbootjavaeeks/mapper/UserMapper;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3062) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2249) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.springboot.springbootjavaeeks.mapper.UserMapper
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 31 common frames omitted
+
+2020-07-06 02:20:16.466  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:20:16.466 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:20:16.466  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:20:16.883  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:20:16.883  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:20:16.897  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:20:16.908  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:20:16.909  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:20:16.919  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-07-06 02:20:17.101  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:20:17.102  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:20:17.103  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:20:17.139  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:20:17.139  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 668 ms
+2020-07-06 02:20:17.241  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:20:17.386  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2020-07-06 02:20:17.398  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:20:17.417  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:20:17.439  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:20:17.440  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:20:17.511  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:20:17.618  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:20:17.814  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:20:17.849  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:20:17.850  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:20:17.851  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:20:17.855  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.566 seconds (JVM running for 477.919)
+2020-07-06 02:20:17.861  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:20:17.870  INFO 3988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:20:17.871  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:20:17.881  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-06 02:20:51.143  INFO 3988 --- [Thread-201] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:20:51.144  INFO 3988 --- [Thread-201] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:20:51.144  INFO 3988 --- [Thread-201] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2020-07-06 02:20:51.149  INFO 3988 --- [Thread-201] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2020-07-06 02:20:51.270  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:20:51.270 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:20:51.271  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:20:51.716  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:20:51.716  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:20:51.723  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:20:51.726  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:20:51.727  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:20:51.735  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+2020-07-06 02:20:51.911  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:20:51.912  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:20:51.913  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:20:51.956  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:20:51.957  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 683 ms
+2020-07-06 02:20:52.084  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:20:52.196  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2020-07-06 02:20:52.204  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:20:52.225  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:20:52.239  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:20:52.239  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:20:52.264  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:20:52.324  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:20:52.406  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:20:52.434  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:20:52.435  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:20:52.435  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:20:52.444  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.228 seconds (JVM running for 512.507)
+2020-07-06 02:20:52.447  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:20:52.455  INFO 3988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:20:52.455  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:20:52.461  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-06 02:28:03.987  INFO 3988 --- [Thread-593] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:28:03.988  INFO 3988 --- [Thread-593] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:28:03.989  INFO 3988 --- [Thread-593] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closing ...
+2020-07-06 02:28:04.002  INFO 3988 --- [Thread-593] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2020-07-06 02:28:04.200  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:28:04.201 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:28:04.202  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:28:04.756  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:28:04.756  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:28:04.765  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:28:04.771  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:28:04.772  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:28:04.779  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2020-07-06 02:28:05.012  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:28:05.014  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:28:05.014  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:28:05.064  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:28:05.065  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 799 ms
+2020-07-06 02:28:05.240  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:28:05.343  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2020-07-06 02:28:05.351  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:28:05.364  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:28:05.386  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:28:05.387  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:28:05.439  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:28:05.537  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:28:05.653  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:28:05.680  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:28:05.680  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:28:05.681  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:28:05.687  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.578 seconds (JVM running for 945.75)
+2020-07-06 02:28:05.692  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:28:05.703  INFO 3988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:28:05.703  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:28:05.709  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-06 02:28:48.209  INFO 3988 --- [Thread-790] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:28:48.210  INFO 3988 --- [Thread-790] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:28:48.211  INFO 3988 --- [Thread-790] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closing ...
+2020-07-06 02:28:48.224  INFO 3988 --- [Thread-790] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2020-07-06 02:28:48.345  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:28:48.345 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:28:48.345  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:28:48.800  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:28:48.801  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:28:48.811  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:28:48.815  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:28:48.815  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:28:48.822  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-07-06 02:28:49.047  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:28:49.047  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:28:49.048  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:28:49.076  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:28:49.076  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2020-07-06 02:28:49.184  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:28:49.272  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2020-07-06 02:28:49.278  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:28:49.289  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:28:49.298  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:28:49.298  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:28:49.330  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:28:49.410  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:28:49.542  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:28:49.569  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:28:49.570  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:28:49.570  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:28:49.582  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.288 seconds (JVM running for 989.645)
+2020-07-06 02:28:49.585  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:28:49.590  INFO 3988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:28:49.590  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:28:49.600  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-06 02:29:04.663  INFO 3988 --- [Thread-987] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:29:04.664  INFO 3988 --- [Thread-987] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:29:04.664  INFO 3988 --- [Thread-987] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closing ...
+2020-07-06 02:29:04.671  INFO 3988 --- [Thread-987] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2020-07-06 02:29:04.827  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:29:04.827 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:29:04.828  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:29:05.330  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:29:05.330  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:29:05.336  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:29:05.339  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:29:05.339  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:29:05.344  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-07-06 02:29:05.440  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:29:05.440  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:29:05.441  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:29:05.463  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:29:05.463  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 631 ms
+2020-07-06 02:29:05.523  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:29:05.590  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2020-07-06 02:29:05.595  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:29:05.604  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:29:05.610  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:29:05.610  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:29:05.643  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:29:05.737  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:29:05.902  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:29:05.924  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:29:05.925  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:29:05.926  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:29:05.947  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.184 seconds (JVM running for 1006.01)
+2020-07-06 02:29:05.953  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:29:05.957  INFO 3988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:29:05.957  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:29:05.963  INFO 3988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-06 02:31:29.343 ERROR 3988 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 143754
+2020-07-06 02:31:29.344 ERROR 3988 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 143768
+2020-07-06 02:31:29.346 ERROR 3988 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 143780
+2020-07-06 02:31:29.350 ERROR 3988 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 143796
+2020-07-06 02:31:29.352 ERROR 3988 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 143812
+2020-07-06 02:31:29.362 DEBUG 3988 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:31:29.363 DEBUG 3988 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 2(Integer)
+2020-07-06 02:31:29.365 DEBUG 3988 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getUser          : <==      Total: 0
+2020-07-06 02:31:29.377 ERROR 3988 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.springboot.springbootjavaeeks.controller.UserController.userLogin(UserController.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.23.jar:1.1.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-07-06 02:31:29.379  WARN 3988 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-07-06 02:32:20.333  INFO 3988 --- [Thread-1184] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:32:20.334  INFO 3988 --- [Thread-1184] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:32:20.335  INFO 3988 --- [Thread-1184] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closing ...
+2020-07-06 02:32:20.337  INFO 3988 --- [Thread-1184] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2020-07-06 02:32:20.476  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:32:20.476 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:32:20.476  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:32:20.876  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:32:20.876  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:32:20.884  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:32:20.891  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:32:20.891  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:32:20.897  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-07-06 02:32:21.131  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:32:21.133  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:32:21.134  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:32:21.171  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:32:21.171  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 691 ms
+2020-07-06 02:32:21.253  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:32:21.342  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2020-07-06 02:32:21.348  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:32:21.359  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:32:21.370  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:32:21.371  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:32:21.397  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:32:21.464  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:32:21.572  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:32:21.598  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:32:21.599  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:32:21.600  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:32:21.604  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.189 seconds (JVM running for 1201.667)
+2020-07-06 02:32:21.606  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:33:25.383  INFO 3988 --- [Thread-1381] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:33:25.384  INFO 3988 --- [Thread-1381] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:33:25.384  INFO 3988 --- [Thread-1381] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closing ...
+2020-07-06 02:33:25.394  INFO 3988 --- [Thread-1381] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+2020-07-06 02:33:25.657  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:33:25.657 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:33:25.657  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:33:26.086  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:33:26.086  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:33:26.095  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:33:26.104  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:33:26.105  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:33:26.115  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-07-06 02:33:26.458  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:33:26.462  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:33:26.462  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:33:26.498  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:33:26.501  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+2020-07-06 02:33:26.631  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:33:26.768  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+2020-07-06 02:33:26.776  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:33:26.786  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:33:26.796  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:33:26.796  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:33:26.848  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:33:26.947  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:33:27.173  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:33:27.219  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:33:27.220  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:33:27.220  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:33:27.226  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.616 seconds (JVM running for 1267.289)
+2020-07-06 02:33:27.228  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:34:07.158  INFO 3988 --- [Thread-1578] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:34:07.158  INFO 3988 --- [Thread-1578] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:34:07.177  INFO 3988 --- [Thread-1578] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closing ...
+2020-07-06 02:34:07.915  INFO 3988 --- [Thread-1578] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+2020-07-06 02:34:08.204  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:34:08.204 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:34:08.205  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:34:09.135  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:34:09.136  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:34:09.146  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:34:09.157  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:34:09.157  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:34:09.174  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2020-07-06 02:34:09.483  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:34:09.484  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:34:09.484  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:34:09.529  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:34:09.529  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1317 ms
+2020-07-06 02:34:09.725  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:34:09.889  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+2020-07-06 02:34:09.975  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:34:09.986  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:34:10.002  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:34:10.005  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:34:10.005  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:34:10.233  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:34:10.424  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:34:10.469  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:34:10.470  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:34:10.471  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:34:10.476  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 2.453 seconds (JVM running for 1310.539)
+2020-07-06 02:34:10.479  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:35:29.279  INFO 3988 --- [Thread-1775] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:35:29.280  INFO 3988 --- [Thread-1775] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:35:29.280  INFO 3988 --- [Thread-1775] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closing ...
+2020-07-06 02:35:29.285  INFO 3988 --- [Thread-1775] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+2020-07-06 02:35:29.415  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:35:29.415 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:35:29.416  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:35:29.892  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:35:29.892  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:35:29.902  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:35:29.910  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:35:29.910  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:35:29.916  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-07-06 02:35:30.116  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:35:30.119  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:35:30.119  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:35:30.153  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:35:30.153  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 734 ms
+2020-07-06 02:35:30.331  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:35:30.436  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} inited
+2020-07-06 02:35:30.449  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:35:30.460  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:35:30.474  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:35:30.474  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:35:30.508  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:35:30.655  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:35:30.770  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:35:30.805  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:35:30.810  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:35:30.810  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:35:30.818  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.452 seconds (JVM running for 1390.881)
+2020-07-06 02:35:30.820  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:35:43.907  INFO 3988 --- [Thread-1972] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:35:43.909  INFO 3988 --- [Thread-1972] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:35:43.913  INFO 3988 --- [Thread-1972] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closing ...
+2020-07-06 02:35:43.918  INFO 3988 --- [Thread-1972] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
+2020-07-06 02:35:44.058  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:35:44.058 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:35:44.058  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:35:46.129  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:35:46.129  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:35:46.138  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:35:46.150  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:35:46.151  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:35:46.162  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-07-06 02:35:46.659  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:35:46.660  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:35:46.660  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:35:46.700  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:35:46.701  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2640 ms
+2020-07-06 02:35:46.783  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:35:46.868  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} inited
+2020-07-06 02:35:46.877  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:35:46.891  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:35:46.919  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:35:46.919  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:35:46.954  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:35:47.020  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:35:47.128  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:35:47.165  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:35:47.169  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:35:47.171  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:35:47.183  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 3.177 seconds (JVM running for 1407.246)
+2020-07-06 02:35:47.185  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:36:39.516  INFO 3988 --- [Thread-2169] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:36:39.517  INFO 3988 --- [Thread-2169] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:36:39.517  INFO 3988 --- [Thread-2169] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closing ...
+2020-07-06 02:36:39.523  INFO 3988 --- [Thread-2169] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closed
+2020-07-06 02:36:39.643  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:36:39.644 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:36:39.644  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:36:40.361  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:36:40.361  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:36:40.378  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:36:40.383  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:36:40.383  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:36:40.392  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+2020-07-06 02:36:40.576  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:36:40.577  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:36:40.577  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:36:40.625  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:36:40.625  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 975 ms
+2020-07-06 02:36:40.747  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:36:40.835  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} inited
+2020-07-06 02:36:40.840  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:36:40.849  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:36:40.860  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:36:40.865  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:36:40.895  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:36:40.981  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:36:41.061  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:36:41.089  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:36:41.089  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:36:41.090  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:36:41.093  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.5 seconds (JVM running for 1461.157)
+2020-07-06 02:36:41.095  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:42:10.895  INFO 3988 --- [Thread-2366] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:42:10.897  INFO 3988 --- [Thread-2366] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:42:10.899  INFO 3988 --- [Thread-2366] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closing ...
+2020-07-06 02:42:10.911  INFO 3988 --- [Thread-2366] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closed
+2020-07-06 02:42:11.035  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 3988 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:42:11.035 DEBUG 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:42:11.035  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:42:11.394  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:42:11.394  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:42:11.400  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:42:11.406  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:42:11.406  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:42:11.412  INFO 3988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-07-06 02:42:11.578  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:42:11.579  INFO 3988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:42:11.579  INFO 3988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:42:11.607  INFO 3988 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:42:11.607  INFO 3988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 568 ms
+2020-07-06 02:42:11.692  INFO 3988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:42:11.775  INFO 3988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} inited
+2020-07-06 02:42:11.782  INFO 3988 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:42:11.790  INFO 3988 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:42:11.799  INFO 3988 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:42:11.800  INFO 3988 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:42:11.833  WARN 3988 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:42:11.894  INFO 3988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:42:11.977  INFO 3988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:42:12.009  INFO 3988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:42:12.010  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:42:12.010  INFO 3988 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:42:12.016  INFO 3988 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 1.019 seconds (JVM running for 1792.079)
+2020-07-06 02:42:12.021  INFO 3988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:46:01.039  INFO 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 15056 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:46:01.045 DEBUG 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:46:01.047  INFO 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:46:01.167  INFO 15056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 02:46:01.168  INFO 15056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 02:46:02.303  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:46:02.305  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:46:02.323  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:46:02.339  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:46:02.339  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:46:02.352  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2020-07-06 02:46:03.624  INFO 15056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:46:03.645  INFO 15056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:46:03.646  INFO 15056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:46:03.927  INFO 15056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:46:03.929  INFO 15056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2761 ms
+2020-07-06 02:46:04.467  INFO 15056 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:46:05.048  INFO 15056 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 02:46:05.143  INFO 15056 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:46:05.312  INFO 15056 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 02:46:05.462  WARN 15056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:46:05.506  INFO 15056 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 02:46:05.710  INFO 15056 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:46:05.776  INFO 15056 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:46:06.041  INFO 15056 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:46:06.062  INFO 15056 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:46:06.190  INFO 15056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:46:06.303  INFO 15056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:46:06.307  INFO 15056 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:46:06.307  INFO 15056 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:46:06.322  INFO 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 5.913 seconds (JVM running for 7.369)
+2020-07-06 02:46:07.319  INFO 15056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:46:07.320  INFO 15056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:46:07.332  INFO 15056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-07-06 02:46:07.833  WARN 15056 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [457] milliseconds.
+2020-07-06 02:46:14.755 DEBUG 15056 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:46:14.868 DEBUG 15056 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 2(Integer)
+2020-07-06 02:46:14.885 DEBUG 15056 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 0
+2020-07-06 02:46:14.902 ERROR 15056 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.springboot.springbootjavaeeks.controller.UserController.userLogin(UserController.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.23.jar:1.1.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-07-06 02:46:14.905  WARN 15056 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-07-06 02:48:05.267  INFO 15056 --- [Thread-197] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:48:05.271  INFO 15056 --- [Thread-197] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:48:05.333  INFO 15056 --- [Thread-197] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-07-06 02:48:05.344  INFO 15056 --- [Thread-197] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-07-06 02:48:05.646  INFO 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 15056 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:48:05.647 DEBUG 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:48:05.648  INFO 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:48:06.686  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:48:06.688  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:48:06.700  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:48:06.708  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:48:06.708  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:48:06.715  INFO 15056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2020-07-06 02:48:06.995  INFO 15056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:48:06.997  INFO 15056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:48:06.997  INFO 15056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:48:07.040  INFO 15056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:48:07.040  INFO 15056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1386 ms
+2020-07-06 02:48:07.166  INFO 15056 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:48:07.290  INFO 15056 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-07-06 02:48:07.300  INFO 15056 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:48:07.312  INFO 15056 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:48:07.331  INFO 15056 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:48:07.331  INFO 15056 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:48:07.378  WARN 15056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:48:07.493  INFO 15056 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:48:07.640  INFO 15056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:48:07.688  INFO 15056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:48:07.690  INFO 15056 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:48:07.691  INFO 15056 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:48:07.699  INFO 15056 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 2.252 seconds (JVM running for 128.746)
+2020-07-06 02:48:07.702  INFO 15056 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-06 02:48:08.277  INFO 15056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:48:08.278  INFO 15056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:48:08.288  INFO 15056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-06 02:48:14.833  WARN 15056 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-07-06 02:48:25.659  INFO 13328 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 13328 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:48:25.663 DEBUG 13328 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:48:25.664  INFO 13328 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:48:25.796  INFO 13328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 02:48:25.796  INFO 13328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 02:48:27.013  INFO 13328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:48:27.015  INFO 13328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:48:27.037  INFO 13328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:48:27.053  INFO 13328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:48:27.054  INFO 13328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:48:27.067  INFO 13328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2020-07-06 02:48:28.240  INFO 13328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:48:28.251  INFO 13328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:48:28.251  INFO 13328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:48:28.430  INFO 13328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:48:28.431  INFO 13328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2635 ms
+2020-07-06 02:48:28.854  INFO 13328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:48:29.418  INFO 13328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 02:48:29.469  INFO 13328 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:48:29.538  INFO 13328 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 02:48:29.723  WARN 13328 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:48:29.734  INFO 13328 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 02:48:29.919  INFO 13328 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:48:30.055  INFO 13328 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:48:30.287  INFO 13328 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:48:30.302  INFO 13328 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:48:30.519  INFO 13328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:48:30.595  INFO 13328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:48:30.599  INFO 13328 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:48:30.600  INFO 13328 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:48:30.620  INFO 13328 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 5.635 seconds (JVM running for 7.601)
+2020-07-06 02:48:39.048  INFO 13328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:48:39.049  INFO 13328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:48:39.060  INFO 13328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-07-06 02:48:45.129 DEBUG 13328 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:48:45.239 DEBUG 13328 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 2(Integer)
+2020-07-06 02:48:45.257 DEBUG 13328 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 0
+2020-07-06 02:48:45.273 ERROR 13328 --- [http-nio-8080-exec-2] c.s.s.controller.UserController          : 登录失败：User(id=2, user_name=null, password=000000, name=null, gender=null, birthday=null, contact=null, e_mail=null)
+2020-07-06 02:50:07.529 ERROR 13328 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 82277
+2020-07-06 02:50:07.533 ERROR 13328 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 98139
+2020-07-06 02:50:07.535 ERROR 13328 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 98165
+2020-07-06 02:50:07.538 ERROR 13328 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 98191
+2020-07-06 02:50:07.540 ERROR 13328 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, jdbcUrl : jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8, lastPacketReceivedIdleMillis : 98218
+2020-07-06 02:50:07.555 DEBUG 13328 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:50:07.555 DEBUG 13328 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 2(Integer)
+2020-07-06 02:50:07.567 DEBUG 13328 --- [http-nio-8080-exec-5] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:50:07.757  WARN 13328 --- [http-nio-8080-exec-5] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [186] milliseconds.
+2020-07-06 02:50:07.760 DEBUG 13328 --- [http-nio-8080-exec-5] c.s.s.controller.UserController          : 登录：User(id=2, user_name=lisi, password=000000, name=李四, gender=男, birthday=Sun Jul 05 00:00:00 CST 2020, contact=12345678901, e_mail=bb@qq.com)
+2020-07-06 02:50:10.056 DEBUG 13328 --- [http-nio-8080-exec-6] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:50:10.061 DEBUG 13328 --- [http-nio-8080-exec-6] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 2(Integer)
+2020-07-06 02:50:10.063 DEBUG 13328 --- [http-nio-8080-exec-6] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:50:10.065 DEBUG 13328 --- [http-nio-8080-exec-6] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:50:10.066 DEBUG 13328 --- [http-nio-8080-exec-6] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 2(Integer)
+2020-07-06 02:50:10.068 DEBUG 13328 --- [http-nio-8080-exec-6] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:50:13.064 DEBUG 13328 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:50:13.065 DEBUG 13328 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 2(Integer)
+2020-07-06 02:50:13.069 DEBUG 13328 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:50:13.072 DEBUG 13328 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:50:13.072 DEBUG 13328 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 2(Integer)
+2020-07-06 02:50:13.073 DEBUG 13328 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:52:06.881  INFO 17300 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 17300 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:52:06.886 DEBUG 17300 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:52:06.887  INFO 17300 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:52:07.015  INFO 17300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 02:52:07.016  INFO 17300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 02:52:08.438  INFO 17300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:52:08.440  INFO 17300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:52:08.465  INFO 17300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:52:08.483  INFO 17300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:52:08.484  INFO 17300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:52:08.504  INFO 17300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020-07-06 02:52:09.937  INFO 17300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:52:09.952  INFO 17300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:52:09.952  INFO 17300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:52:10.143  INFO 17300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:52:10.145  INFO 17300 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3128 ms
+2020-07-06 02:52:10.425  INFO 17300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:52:10.843  INFO 17300 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 02:52:10.891  INFO 17300 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:52:10.959  INFO 17300 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 02:52:11.122  WARN 17300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:52:11.140  INFO 17300 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 02:52:11.324  INFO 17300 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:52:11.422  INFO 17300 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:52:11.575  INFO 17300 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:52:11.590  INFO 17300 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:52:11.708  INFO 17300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:52:11.761  INFO 17300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:52:11.764  INFO 17300 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:52:11.764  INFO 17300 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:52:11.774  INFO 17300 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 6.086 seconds (JVM running for 9.056)
+2020-07-06 02:52:17.199  INFO 17300 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:52:17.199  INFO 17300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:52:17.207  INFO 17300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-06 02:52:23.650 DEBUG 17300 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:52:23.770 DEBUG 17300 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 02:52:23.798 DEBUG 17300 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:52:23.997  WARN 17300 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [192] milliseconds.
+2020-07-06 02:52:24.019 DEBUG 17300 --- [http-nio-8080-exec-2] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 02:52:25.864 DEBUG 17300 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:52:25.867 DEBUG 17300 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:52:25.869 DEBUG 17300 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:52:25.870 DEBUG 17300 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:52:25.870 DEBUG 17300 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:52:25.871 DEBUG 17300 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:52:39.815  INFO 17300 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:52:39.818  INFO 17300 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:52:39.819  INFO 17300 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-07-06 02:52:39.826  INFO 17300 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-07-06 02:53:29.863  INFO 19304 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Starting SpringBootJavaeeksApplication on cuiwanzhi with PID 19304 (C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks\target\classes started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 02:53:29.867 DEBUG 19304 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 02:53:29.868  INFO 19304 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : No active profile set, falling back to default profiles: default
+2020-07-06 02:53:30.020  INFO 19304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 02:53:30.021  INFO 19304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 02:53:31.646  INFO 19304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:53:31.647  INFO 19304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 02:53:31.682  INFO 19304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 JDBC repository interfaces.
+2020-07-06 02:53:31.697  INFO 19304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 02:53:31.697  INFO 19304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 02:53:31.707  INFO 19304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-07-06 02:53:32.874  INFO 19304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-06 02:53:32.896  INFO 19304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 02:53:32.897  INFO 19304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 02:53:33.095  INFO 19304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 02:53:33.108  INFO 19304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3087 ms
+2020-07-06 02:53:33.629  INFO 19304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 02:53:34.255  INFO 19304 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 02:53:34.303  INFO 19304 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 02:53:34.359  INFO 19304 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 02:53:34.501  WARN 19304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 02:53:34.527  INFO 19304 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 02:53:34.687  INFO 19304 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 02:53:34.761  INFO 19304 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 02:53:34.907  INFO 19304 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 02:53:34.915  INFO 19304 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 02:53:35.019  INFO 19304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 02:53:35.068  INFO 19304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-06 02:53:35.070  INFO 19304 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-06 02:53:35.071  INFO 19304 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 02:53:35.079  INFO 19304 --- [restartedMain] c.s.s.SpringBootJavaeeksApplication      : Started SpringBootJavaeeksApplication in 5.913 seconds (JVM running for 7.871)
+2020-07-06 02:53:39.416  INFO 19304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 02:53:39.416  INFO 19304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 02:53:39.427  INFO 19304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-06 02:53:44.116 DEBUG 19304 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==>  Preparing: select * from user where id=?
+2020-07-06 02:53:44.247 DEBUG 19304 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : ==> Parameters: 1(Integer)
+2020-07-06 02:53:44.272 DEBUG 19304 --- [http-nio-8080-exec-2] c.s.s.mapper.UserMapper.getUser          : <==      Total: 1
+2020-07-06 02:53:44.470  WARN 19304 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [191] milliseconds.
+2020-07-06 02:53:44.485 DEBUG 19304 --- [http-nio-8080-exec-2] c.s.s.controller.UserController          : 登录：User(id=1, user_name=zhangsan, password=000000, name=张三, gender=男, birthday=Sat Jul 04 00:00:00 CST 2020, contact=12345678901, e_mail=aa@qq.com)
+2020-07-06 02:53:45.850 DEBUG 19304 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:53:45.855 DEBUG 19304 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:53:45.856 DEBUG 19304 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:53:45.857 DEBUG 19304 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:53:45.857 DEBUG 19304 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:53:45.858 DEBUG 19304 --- [http-nio-8080-exec-3] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:54:07.050 DEBUG 19304 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:54:07.051 DEBUG 19304 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:54:07.053 DEBUG 19304 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:54:07.061 DEBUG 19304 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:54:07.061 DEBUG 19304 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:54:07.063 DEBUG 19304 --- [http-nio-8080-exec-4] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:54:36.217 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:54:36.218 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:54:36.219 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 02:54:36.220 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
+2020-07-06 02:54:36.220 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
+2020-07-06 02:54:36.222 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1

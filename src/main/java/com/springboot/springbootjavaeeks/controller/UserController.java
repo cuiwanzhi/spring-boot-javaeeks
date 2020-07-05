@@ -30,7 +30,7 @@ public class UserController {
     @RequestMapping("/userlogin")
     public String userLogin(User loginUser, Model model, HttpServletRequest request) {
         User user = userMapper.getUser(loginUser.getId());
-        if (user.getPassword().equals(loginUser.getPassword())) {
+        if (user!=null && user.getPassword().equals(loginUser.getPassword())) {
             request.getSession().setAttribute("user", user);
             request.getSession().setAttribute("level", "user");
             model.addAttribute("msg", "登录成功");
@@ -94,6 +94,18 @@ public class UserController {
     }
 
 
+    @RequestMapping("/getNumber")
+    public String getNumber(HttpServletRequest request , Model model) {
+        User user = (User) request.getSession().getAttribute("user");
+        float income =userMapper.getIncome(user.getId());
+        float year =userMapper.getIncome(user.getId());
+        float sum = income + year;
+        income = income/sum;
+        year = year / sum;
+        model.addAttribute("income", income);
+        model.addAttribute("year", year);
+        return "table";
+    }
 
 
 }

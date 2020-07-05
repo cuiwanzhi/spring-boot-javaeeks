@@ -27,7 +27,7 @@ public class ControController {
     @RequestMapping("/controllerLogin")
     public String controllerLogin(com.springboot.springbootjavaeeks.bean.Controller logincontroller, Model model, HttpServletRequest request) {
         com.springboot.springbootjavaeeks.bean.Controller controller = controllerMapper.getController(logincontroller.getId());
-        if (controller.getPassword().equals(logincontroller.getPassword())) {
+        if (controller!=null && controller.getPassword().equals(logincontroller.getPassword())) {
             request.getSession().setAttribute("user", controller);
             request.getSession().setAttribute("level", "controller");
             return "controllerIndex";
