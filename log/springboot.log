@@ -2897,3 +2897,29 @@ java.lang.NullPointerException: null
 2020-07-06 02:54:36.220 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==>  Preparing: select sum(income_number) from income where id=? group by id;
 2020-07-06 02:54:36.220 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : ==> Parameters: 1(Integer)
 2020-07-06 02:54:36.222 DEBUG 19304 --- [http-nio-8080-exec-7] c.s.s.mapper.UserMapper.getIncome        : <==      Total: 1
+2020-07-06 03:00:13.601  INFO 2156 --- [main] c.s.s.SpringBootJavaeeksApplicationTests : Starting SpringBootJavaeeksApplicationTests on cuiwanzhi with PID 2156 (started by 23683 in C:\Users\23683\Desktop\spring\spring-boot-codes\spring-boot-javaeeks)
+2020-07-06 03:00:13.603 DEBUG 2156 --- [main] c.s.s.SpringBootJavaeeksApplicationTests : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-06 03:00:13.604  INFO 2156 --- [main] c.s.s.SpringBootJavaeeksApplicationTests : No active profile set, falling back to default profiles: default
+2020-07-06 03:00:15.414  INFO 2156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 03:00:15.423  INFO 2156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-07-06 03:00:15.481  INFO 2156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 0 JDBC repository interfaces.
+2020-07-06 03:00:15.518  INFO 2156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-06 03:00:15.530  INFO 2156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-06 03:00:15.553  INFO 2156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020-07-06 03:00:17.453  INFO 2156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 03:00:18.642  INFO 2156 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-06 03:00:18.829  INFO 2156 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-06 03:00:19.056  INFO 2156 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-06 03:00:19.636  INFO 2156 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-06 03:00:20.031  WARN 2156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-06 03:00:20.222  INFO 2156 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-06 03:00:21.100  INFO 2156 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-06 03:00:21.101  INFO 2156 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-06 03:00:21.154  INFO 2156 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 03:00:22.023  INFO 2156 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories¡­
+2020-07-06 03:00:22.025  INFO 2156 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-06 03:00:22.043  INFO 2156 --- [main] c.s.s.SpringBootJavaeeksApplicationTests : Started SpringBootJavaeeksApplicationTests in 9.392 seconds (JVM running for 11.757)
+2020-07-06 03:00:22.752  INFO 2156 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-06 03:00:22.755  INFO 2156 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 03:00:22.763  INFO 2156 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-07-06 03:00:22.784  INFO 2156 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
