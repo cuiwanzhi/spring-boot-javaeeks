@@ -31,6 +31,8 @@ public class IncomeController {
         List<Income> allIncome = null;
         if (request.getSession().getAttribute("level").equals("controller")) {
             allIncome = incomeMapper.getAllIncome();
+            model.addAttribute("allIncome", allIncome);
+            return "controllerSelectIncome";
 
         } else {
             User user = (User) request.getSession().getAttribute("user");

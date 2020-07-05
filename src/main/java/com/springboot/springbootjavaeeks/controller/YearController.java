@@ -31,6 +31,8 @@ public class YearController {
         List<Year> allYear = null;
         if (request.getSession().getAttribute("level").equals("controller")) {
             allYear = yearMapper.getAllYear();
+            model.addAttribute("allYear", allYear);
+            return "controllerSelectYear";
 
         } else {
             User user = (User) request.getSession().getAttribute("user");

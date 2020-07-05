@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>收入列表</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>编号</td>
+        <td>用户id</td>
+        <td>金额</td>
+        <td>时间</td>
+        <td>备注</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="Income:${allIncome}">
+        <td th:text="${Income.id}"></td>
+        <td th:text="${Income.user_id}"></td>
+        <td th:text="${Income.income_number}"></td>
+        <td th:text="${#dates.format(Income.income_date, 'yyyy-MM-dd hh:mm')}"></td>
+        <td th:text="${Income.income_type}"></td>
+        <td>
+            <form method="post" action="/deleteIncome">
+                <input name="id" type="hidden" th:attr="value=${Income.id}">
+                <button type="submit">删除</button>
+            </form>
+            <form method="post" action="/selectIncome">
+                <input name="id" type="hidden" th:attr="value=${Income.id}">
+                <button type="submit">修改</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<a href="/controllerIndex"><button type="button">返回首页</button></a>
+</body>
+</html>

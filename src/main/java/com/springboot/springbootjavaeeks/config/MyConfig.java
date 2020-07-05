@@ -18,11 +18,13 @@ public class MyConfig implements WebMvcConfigurer {
         registry.addViewController("/index.html").setViewName("index");
         registry.addViewController("//insertYear.html").setViewName("insertYear");
         registry.addViewController("/controller").setViewName("controller");
+        registry.addViewController("/controllerIndex").setViewName("controllerIndex");
         registry.addViewController("/insertIncome.html").setViewName("insertIncome");
         registry.addViewController("/changePassword").setViewName("updataPassword");
+        registry.addViewController("/controller").setViewName("controllerLogin");
     }
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginHand()).addPathPatterns("/**").excludePathPatterns("/").excludePathPatterns("/login").excludePathPatterns("/userlogin").excludePathPatterns("/controllerlogin").excludePathPatterns("/controller").excludePathPatterns("/druid/*");
+        registry.addInterceptor(new LoginHand()).addPathPatterns("/**").excludePathPatterns("/").excludePathPatterns("/login").excludePathPatterns("/userlogin").excludePathPatterns("/controllerLogin").excludePathPatterns("/controller").excludePathPatterns("/druid/*");
     }
 }
