@@ -14,18 +14,11 @@ public class MyConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("login");
-        registry.addViewController("/user").setViewName("login");
-        registry.addViewController("/index.html").setViewName("index");
-        registry.addViewController("//insertYear.html").setViewName("insertYear");
-        registry.addViewController("/controller").setViewName("controller");
-        registry.addViewController("/controllerIndex").setViewName("controllerIndex");
-        registry.addViewController("/insertIncome.html").setViewName("insertIncome");
-        registry.addViewController("/changePassword").setViewName("updataPassword");
-        registry.addViewController("/controller").setViewName("controllerLogin");
-        registry.addViewController("/table").setViewName("table");
+        registry.addViewController("/login").setViewName("login");
+
     }
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginHand()).addPathPatterns("/**").excludePathPatterns("/").excludePathPatterns("/login").excludePathPatterns("/userlogin").excludePathPatterns("/controllerLogin").excludePathPatterns("/controller").excludePathPatterns("/druid/*");
+        registry.addInterceptor(new LoginHand()).addPathPatterns("/**").excludePathPatterns("/").excludePathPatterns("/login").excludePathPatterns("/controllerlogin").excludePathPatterns("/controller").excludePathPatterns("/druid/*");
     }
 }
