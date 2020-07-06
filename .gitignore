@@ -48,7 +48,7 @@ build/
 hs_err_pid*
 
 target
-
+*.log
 .mvn
 mvnw.cmd
 mvnw

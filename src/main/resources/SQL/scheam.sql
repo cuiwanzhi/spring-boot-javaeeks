@@ -16,7 +16,7 @@ create table controller(
                            controller_name varchar(255) NOT NULL,	#用户名
                            password	varchar(255) NOT NULL,				#管理员密码
                            name varchar(255) NOT NULL,							#管理员姓名
-                           gender varchar(255) NOT NULL,						#管理员性别
+                           gender varchar(255) NOT NULL,			    			#管理员性别
                            contact varchar(255) NOT NULL						#联系方式
 );
 
