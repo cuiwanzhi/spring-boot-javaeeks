@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * @author cuiwanzhi
@@ -29,7 +30,9 @@ public class UserController {
                 loginUser.setName("root");
                 request.getSession().setAttribute("user", loginUser);
                 log.info("登录用户" + loginUser.toString());
-                return "login";
+                List<User> allUser = userMapper.getAllUser();
+                model.addAttribute("allUser", allUser);
+                return "rootindex";
             } else {
                 model.addAttribute("msg", "密码错误");
                 return "login";

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员主页</title>
+</head>
+<body>
+<a href="/insertUser">
+    <button>生成账号</button>
+</a>
+<a href="">
+    <button>学生数据</button>
+</a>
+<table>
+    <tr>
+        <td>用户id</td>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>练习方式</td>
+        <td>邮箱</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="allUser:${allUser}">
+        <td th:text="${allUser.id}">用户id</td>
+        <td th:text="${allUser.name}>姓名</td>
+        <td th:text="${allUser.gender}>性别</td>
+        <td th:text="${allUser.contact}>练习方式</td>
+        <td th:text="${allUser.e_mail}>邮箱</td>
+        <td>
+            <form method="post" action="/deleteUser">
+                <input name="id" th:attr="value={allUser.id}">
+                <button type="submit">删除</button>
+            </form>
+            <form method="post" action="/restorePassword">
+                <input name="id" th:attr="value={allUser.id}">
+                <button type="submit">还原密码</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
