@@ -29,10 +29,10 @@ public class UserController {
 
                 loginUser.setName("root");
                 request.getSession().setAttribute("user", loginUser);
+                request.getSession().setAttribute("level", "root");
                 log.info("登录用户" + loginUser.toString());
-                List<User> allUser = userMapper.getAllUser();
-                model.addAttribute("allUser", allUser);
-                return "rootindex";
+
+                return "redirect:/index";
             } else {
                 model.addAttribute("msg", "密码错误");
                 return "login";
@@ -41,7 +41,8 @@ public class UserController {
             User user = userMapper.selectUser(loginUser.getId());
             if (user != null && user.getPassword().equals(loginUser.getPassword())) {
                 request.getSession().setAttribute("user", user);
-                return "";
+                request.getSession().setAttribute("level", "user");
+                return "redirect:/index";
             } else {
                 model.addAttribute("msg", "用户名或密码错误");
                 return "login";
@@ -51,4 +52,19 @@ public class UserController {
 
 
     }
+
+    @RequestMapping("/index")
+    public String index(HttpServletRequest request,Model model){
+        if (request.getSession().getAttribute("level")!=null && request.getSession().getAttribute("level").equals("root")) {//处理普通用户和root的不同首页
+            List<User> allUser = userMapper.getAllUser();
+            model.addAttribute("allUser", allUser);
+            return "rootindex";
+        } else {
+
+            return "userindex";
+        }
+    }
+
+
+
 }

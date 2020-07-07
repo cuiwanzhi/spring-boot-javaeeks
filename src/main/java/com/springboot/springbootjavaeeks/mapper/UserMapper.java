@@ -1,8 +1,8 @@
 package com.springboot.springbootjavaeeks.mapper;
 
 import com.springboot.springbootjavaeeks.bean.User;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -17,4 +17,14 @@ public interface UserMapper {
 
     @Select("select * from user ")
     public List<User> getAllUser();
+
+    @Transactional
+    @Insert("insert into user( name,password) VALUE(#{name},'000000')")
+    public int insertUser(String name);
+
+    @Delete("delete from user where id = #{id}")
+    public int deleteUser(int id);
+
+    @Update("update user set password ='000000' where id = #{id}")
+    public int restorePassword(int id);
 }
