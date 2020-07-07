@@ -1,4 +1,4 @@
-package com.springboot.springbootjavaeeks.bean;
+package com.springboot.springbootjavaeeks.util;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.expression.ParseException;

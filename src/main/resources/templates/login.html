@@ -7,12 +7,12 @@
 <body style="TEXT-ALIGN:center">
 <h4 style="color:blue">用户登录</h4>
 <span th:text="${msg}" style="color:red"></span>
-<form method="post" action="/userlogin">
+<form method="post" action="/login">
     <input type="text" name="id" placeholder="账号">
     <br>
     <input type="password" name="password"placeholder="密码">
     <br>
-    <input value="登录" type="submit">
+    <button type="submit">登录</button>
 </form>
 </body>
 </html>
