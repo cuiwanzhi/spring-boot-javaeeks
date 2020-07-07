@@ -22,17 +22,17 @@
     </tr>
     <tr th:each="allUser:${allUser}">
         <td th:text="${allUser.id}">用户id</td>
-        <td th:text="${allUser.name}>姓名</td>
-        <td th:text="${allUser.gender}>性别</td>
-        <td th:text="${allUser.contact}>练习方式</td>
-        <td th:text="${allUser.e_mail}>邮箱</td>
+        <td th:text="${allUser.name}">姓名</td>
+        <td th:text="${allUser.gender}">性别</td>
+        <td th:text="${allUser.contact}">练习方式</td>
+        <td th:text="${allUser.e_mail}">邮箱</td>
         <td>
             <form method="post" action="/deleteUser">
-                <input name="id" th:attr="value={allUser.id}">
+                <input name="id" th:attr="value=${allUser.id}" type="hidden">
                 <button type="submit">删除</button>
             </form>
             <form method="post" action="/restorePassword">
-                <input name="id" th:attr="value={allUser.id}">
+                <input name="id" th:attr="value=${allUser.id}" type="hidden">
                 <button type="submit">还原密码</button>
             </form>
         </td>
